@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "@gplassard/projen-extensions": "^0.0.51",
+    "@types/aws-lambda": "^8.10.119",
     "@types/jest": "^29.5.3",
     "@types/node": "^16",
     "@typescript-eslint/eslint-plugin": "^5",
