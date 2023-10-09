@@ -5,5 +5,6 @@ const project = new TypescriptLibraryProject({
   packageName: '@gplassard/cdk-discord-bot-construct',
   devDeps: ['aws-cdk-lib', 'constructs', 'esbuild', 'slash-create', '@types/aws-lambda'],
   peerDeps: ['aws-cdk-lib', 'constructs', 'slash-create'],
+  releaseRank: 2,
 });
 project.synth();
