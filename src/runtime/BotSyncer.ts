@@ -4,8 +4,10 @@ import { SlashCommand, SlashCreator } from 'slash-create';
 export interface BotSyncerProps {
   commands: (typeof SlashCommand)[];
 }
+
 export class BotSyncer {
   private readonly creator: SlashCreator;
+
   constructor(private readonly props: BotSyncerProps) {
     this.creator = new SlashCreator({
       applicationID: process.env.DISCORD_APP_ID!,
@@ -18,11 +20,10 @@ export class BotSyncer {
   handler(): Handler {
     return async () => {
       console.log('Syncing commands classes', this.props.commands.map(c => c.name));
-      await this.creator
-        .registerCommands(this.props.commands)
-        .syncCommandsAsync({
-          deleteCommands: true,
-        });
+      this.creator.registerCommands(this.props.commands);
+      await this.creator.syncCommands({
+        deleteCommands: true,
+      });
       const commands = Array.from(this.creator.commands.values()).map(c => c.toCommandJSON(true));
       console.log('Commands synced to discord', commands);
       return commands;

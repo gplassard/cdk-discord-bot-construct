@@ -9,8 +9,8 @@ devDependencies:
     specifier: ^0.0.73
     version: 0.0.73(constructs@10.3.0)
   '@types/aws-lambda':
-    specifier: ^8.10.130
-    version: 8.10.130
+    specifier: ^8.10.131
+    version: 8.10.131
   '@types/jest':
     specifier: ^29.5.11
     version: 29.5.11
@@ -24,8 +24,8 @@ devDependencies:
     specifier: ^6
     version: 6.17.0(eslint@8.56.0)(typescript@5.3.3)
   aws-cdk-lib:
-    specifier: 2.113.0
-    version: 2.113.0(constructs@10.3.0)
+    specifier: 2.118.0
+    version: 2.118.0(constructs@10.3.0)
   constructs:
     specifier: 10.3.0
     version: 10.3.0
@@ -51,8 +51,8 @@ devDependencies:
     specifier: ^0.78.8
     version: 0.78.8(constructs@10.3.0)
   slash-create:
-    specifier: 5.14.0
-    version: 5.14.0
+    specifier: 6.0.2
+    version: 6.0.2
   standard-version:
     specifier: ^9
     version: 9.5.0
@@ -673,6 +673,11 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
+  /@fastify/busboy@2.1.0:
+    resolution: {integrity: sha512-+KpH+QxZU7O4675t3mnkQKcZZg56u+K/Ct2K+N2AZYNVK8kyeo/bI18tI8aPm3tvNNRyTWfj6s5tnGNlcbQRsA==}
+    engines: {node: '>=14'}
+    dev: true
+
   /@gplassard/projen-extensions@0.0.73(constructs@10.3.0):
     resolution: {integrity: sha512-Ebh4qtX0pWY42PX36ayOarXTL7kkJuxdpZ+F4RpLuyt4Wj7ESw/qxgu5jaGDcZOP2MYNFlLNBWHEniUXORmI+g==, tarball: https://npm.pkg.github.com/download/@gplassard/projen-extensions/0.0.73/9a6a636f6424afd8e03f98cd01ff4e6740903ed1}
     dependencies:
@@ -1026,8 +1031,8 @@ packages:
     resolution: {integrity: sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==}
     dev: true
 
-  /@types/aws-lambda@8.10.130:
-    resolution: {integrity: sha512-HxTfLeGvD1wTJqIGwcBCpNmHKenja+We1e0cuzeIDFfbEj3ixnlTInyPR/81zAe0Ss/Ip12rFK6XNeMLVucOSg==}
+  /@types/aws-lambda@8.10.131:
+    resolution: {integrity: sha512-IWmFpqnVDvskYWnNSiu/qlRn80XlIOU0Gy5rKCl/NjhnI95pV8qIHs6L5b+bpHhyzuOSzjLgBcwgFSXrC1nZWA==}
     dev: true
 
   /@types/babel__core@7.20.3:
@@ -1438,8 +1443,8 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /aws-cdk-lib@2.113.0(constructs@10.3.0):
-    resolution: {integrity: sha512-wZYooUd8nb3ADFtg1dSnsRt1MJmeqEK8cKOnPfCGCfm852YnVdb0qIEclURCQ4ygDJSuqiw9CE+xWVeTQTG6Dw==}
+  /aws-cdk-lib@2.118.0(constructs@10.3.0):
+    resolution: {integrity: sha512-i3At9HOuXNVLxQCo/y7Sb2Zj4Ir4tichG+755AAldebRcqXrCJizZq+sMMt6/Bkjggj2imWmhwHPZw518M9VMw==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
       constructs: ^10.0.0
@@ -4390,9 +4395,9 @@ packages:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
     dev: true
 
-  /slash-create@5.14.0:
-    resolution: {integrity: sha512-V+Zcvs2a9e3obm+zrWw3jr8HcoX5Jtj6cI1ByT0/henOTdEsfh1roOLLhLiLxo80poBZfkLcy3fnn5hTAwF59g==}
-    engines: {node: '>=14'}
+  /slash-create@6.0.2:
+    resolution: {integrity: sha512-V2gqs7Ov3C8hjS2aODwzGUM/4WqpRiNXSPh69Bk3soyL7Kvkc/75HfwOgz9fTNNU+H/u5EMtvjR4hJgey0HKHA==}
+    engines: {node: '>=16'}
     peerDependencies:
       express: ^4
       fastify: ^3 || ^4
@@ -4405,6 +4410,7 @@ packages:
       eventemitter3: 5.0.1
       lodash.isequal: 4.5.0
       tweetnacl: 1.0.3
+      undici: 5.28.2
     dev: true
 
   /slash@3.0.0:
@@ -4862,6 +4868,13 @@ packages:
 
   /undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
+    dev: true
+
+  /undici@5.28.2:
+    resolution: {integrity: sha512-wh1pHJHnUeQV5Xa8/kyQhO7WFa8M34l026L5P/+2TYiakvGy5Rdc8jWZVyG7ieht/0WgJLEd3kcU5gKx+6GC8w==}
+    engines: {node: '>=14.0'}
+    dependencies:
+      '@fastify/busboy': 2.1.0
     dev: true
 
   /update-browserslist-db@1.0.13(browserslist@4.22.1):
