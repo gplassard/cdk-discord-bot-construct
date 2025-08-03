@@ -269,13 +269,13 @@
       },
       "steps": [
         {
-          "exec": "pnpm dlx npm-check-updates@16 --upgrade --target=latest --peer --no-deprecated --dep=dev,peer,prod,optional --filter=@gplassard/projen-extensions,@types/aws-lambda,@types/node,aws-cdk-lib,esbuild,eslint-import-resolver-typescript,eslint-plugin-import,projen,slash-create,ts-node,typescript,vitest,constructs"
+          "exec": "pnpm dlx npm-check-updates@16 --upgrade --target=latest --peer --no-deprecated --dep=dev,peer,prod,optional --filter=@gplassard/projen-extensions,@types/aws-lambda,@types/node,aws-cdk-lib,esbuild,eslint-import-resolver-typescript,eslint-plugin-import,eslint-plugin-unused-imports,projen,slash-create,ts-node,typescript,vitest,constructs"
         },
         {
           "exec": "pnpm i --no-frozen-lockfile"
         },
         {
-          "exec": "pnpm update @gplassard/projen-extensions @stylistic/eslint-plugin @types/aws-lambda @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser aws-cdk-lib commit-and-tag-version constructs esbuild eslint-import-resolver-typescript eslint-plugin-import eslint projen slash-create ts-node typescript vitest"
+          "exec": "pnpm update @gplassard/projen-extensions @stylistic/eslint-plugin @types/aws-lambda @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser aws-cdk-lib commit-and-tag-version constructs esbuild eslint-import-resolver-typescript eslint-plugin-import eslint-plugin-unused-imports eslint projen slash-create ts-node typescript vitest"
         },
         {
           "exec": "npx projen"
