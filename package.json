@@ -26,28 +26,28 @@
   "devDependencies": {
     "@gplassard/projen-extensions": "^0.1.12",
     "@stylistic/eslint-plugin": "^2",
-    "@types/aws-lambda": "^8.10.153",
-    "@types/node": "^24.6.2",
+    "@types/aws-lambda": "^8.10.157",
+    "@types/node": "^24.9.2",
     "@typescript-eslint/eslint-plugin": "^8",
     "@typescript-eslint/parser": "^8",
-    "aws-cdk-lib": "2.214.0",
+    "aws-cdk-lib": "2.221.1",
     "commit-and-tag-version": "^12",
     "constructs": "10.4.2",
-    "esbuild": "^0.25.10",
+    "esbuild": "^0.25.12",
     "eslint": "^9",
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-import": "^2.32.0",
-    "eslint-plugin-unused-imports": "^4.2.0",
+    "eslint-plugin-unused-imports": "^4.3.0",
     "projen": "^0.96.5",
     "slash-create": "6.6.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3",
-    "vitest": "^3.2.4"
+    "vitest": "^4.0.6"
   },
   "peerDependencies": {
     "aws-cdk-lib": "^2.219.0",
     "constructs": "^10.4.2",
-    "slash-create": "^6.6.0"
+    "slash-create": "^6.7.0"
   },
   "pnpm": {},
   "main": "lib/index.js",
