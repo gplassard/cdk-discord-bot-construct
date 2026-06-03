@@ -47,6 +47,8 @@ junit.xml
 /dist/
 !/.eslintrc.json
 !/.npmrc
+!/pnpm-workspace.yaml
+!/.ncurc.js
 .idea
 *.iml
 .vscode
